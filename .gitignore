@@ -3,3 +3,4 @@ node_modules/
 *.log
 /.vscode/launch.json
 package-lock.json
+settings.js
