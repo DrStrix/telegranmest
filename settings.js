@@ -1,4 +1,4 @@
-module.export = {
-  mainId: "1234",
-  tokenBot: "1234"
+module.exports.settings = {
+  mainId: "нужный ИД",
+  tokenBot: "нужный токен"
 };

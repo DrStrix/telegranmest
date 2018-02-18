@@ -1,6 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
+const { settings } = require('./settings');
 
-const token = 'YOUR_TELEGRAM_BOT_TOKEN';
+const token = settings.tokenBot;
 
 const bot = new TelegramBot(token, { polling: true });
 
@@ -17,3 +18,12 @@ bot.on('message', (msg) => {
 
   bot.sendMessage(chatId, 'Received your message');
 });
+
+
+module.exports.sendTelegranMessage = function (obj) {
+  if (obj.type == 'error') {
+
+    bot.sendMessage(settings.mainId, obj.message);
+
+  }
+}
