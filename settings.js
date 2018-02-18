@@ -1,4 +1,4 @@
 module.export = {
-  mainId: "1234",
+  mainId: "12354",
   tokenBot: "1234"
 };
