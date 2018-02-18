@@ -5,5 +5,5 @@ setInterval(() => {
 }, 40000);
 
 setInterval(() => {
-  sendTelegranMessage({ type: "warning", user: "Vasya Stepanov", message: "Вася, у нас проблемы, напиши мне" });
+  sendTelegranMessage({ type: "warning", id: 476670750, message: "Вася, у нас проблемы, напиши мне" });
 }, 20000);

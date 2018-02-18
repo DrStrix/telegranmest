@@ -26,4 +26,8 @@ module.exports.sendTelegranMessage = function (obj) {
     bot.sendMessage(settings.mainId, obj.message);
 
   }
+  if (obj.type == 'warning') {
+
+    bot.sendMessage(obj.id, obj.message);
+  }
 }
