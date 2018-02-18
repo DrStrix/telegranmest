@@ -1,11 +1,9 @@
-const {sendTelegranMessage}=require("telegramBot")
+const { sendTelegranMessage } = require("./telegramBot.js");
 
-setInterval(()=>{
+setInterval(() => {
+  sendTelegranMessage({ type: "error", message: "У НАС ВСЕ ГОРИИИИТ!Т!!!!" });
+}, 40000);
 
-
-    sendTelegranMessage({type:'error', message:"У НАС ВСЕ ГОРИИИИТ!Т!!!!"})
-},40000)
-
-setInterval(()=>{
-    
-},20000)
+setInterval(() => {
+  sendTelegranMessage({ type: "warning", user: "Vasya Stepanov", message: "Вася, у нас проблемы, напиши мне" });
+}, 20000);
