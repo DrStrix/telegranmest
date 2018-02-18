@@ -4,3 +4,4 @@ node_modules/
 /.vscode/launch.json
 package-lock.json
 *ettings.js
+settings.js
